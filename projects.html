@@ -20,7 +20,7 @@
             </ul>
         </nav>
     </header>
-
+    <div class=flex-container>
         <h2>Projects</h2>
         <p>This semester I took a Com-Tech Course where I made many different things here are some examples.</p>
 <div>
@@ -50,35 +50,7 @@
         <h3>I used Adobe Animation to animate a boat going across a river</h3>
     </div>
 </div>
-
-        <button class="carousel-btn prev" onclick="plusSlides(-1)">Previous</button>
-        <button class="carousel-btn next" onclick="plusSlides(1)">Next</button>
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-        
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-        
-            function showSlides(n) {
-                let i;
-                const slides = document.getElementsByClassName("slide");
-                const carouselTexts = document.getElementsByClassName("carousel-text");
-                
-                if (n > slides.length) { slideIndex = 1; }
-                if (n < 1) { slideIndex = slides.length; }
-                
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                    carouselTexts[i].style.display = "none";
-                }
-                
-                slides[slideIndex - 1].style.display = "block";
-                carouselTexts[slideIndex - 1].style.display = "block";
-            }
-        </script>
+</div>
 
     <footer>
         &copy; 2024 Nathan's Portfolio. All rights reserved.
